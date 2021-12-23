@@ -51,12 +51,10 @@ client.on('message', (channel, tags, message, self) => {
     if ( !isNotBot ) return;
 
     const raw = message.toLowerCase().match(regexptvm);
-
-    client.say(channel, `@${tags.username} said the turkish thing`);
   
     if ( raw ) {
         const resp = turkVarMiReact();
-        client.say(channel, `@${tags['display-name']} said the turkish thing`);
+        client.say(channel, `@${tags.username} ${resp}`);
     }
 
     console.log(`${tags['display-name']}: ${message}`);
