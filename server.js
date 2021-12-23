@@ -52,6 +52,8 @@ client.on('message', (channel, tags, message, self) => {
 
     const raw = message.toLowerCase().match(regexptvm);
 
+    client.say(channel, `@${tags.username} said the turkish thing`);
+  
     if ( raw ) {
         const resp = turkVarMiReact();
         client.say(channel, `@${tags['display-name']} said the turkish thing`);
