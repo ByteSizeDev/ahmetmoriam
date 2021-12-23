@@ -53,6 +53,7 @@ client.on('message', (channel, tags, message, self) => {
     const raw = message.toLowerCase().match(regexptvm)
 
     if ( raw ) {
+        console.log(`${raw}`);
         const resp = turkVarMiReact()
         client.say(channel, `@${tags.username} ${resp}`)
     }
