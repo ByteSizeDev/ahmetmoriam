@@ -57,4 +57,6 @@ client.on('message', (channel, tags, message, self) => {
         client.say(channel, `@${tags.username} ${resp}`)
     }
 
+    console.log(`${tags['display-name']}: ${message}`);
+  
 });
