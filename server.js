@@ -85,9 +85,9 @@ client.on('message', (channel, tags, message, self) => {
 
         const delay = getRandomDelay(minWait, maxWait);
 
-        //setTimeout(() => { client.say(channel, `@${tags.username} ${resp}`); }, delay);
+        setTimeout(() => { client.say(channel, `@${tags.username} ${resp}`); }, delay);
 
-        client.say(channel, `@${tags.username} ${resp}`);
+        //client.say(channel, `@${tags.username} ${resp}`);
 
         /////////////////////////////////////////////////////////
     }
