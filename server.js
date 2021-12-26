@@ -92,6 +92,6 @@ client.on('message', (channel, tags, message, self) => {
         /////////////////////////////////////////////////////////
     }
 
-    console.log(`${tags['display-name']}: ${message}`);
+    console.log(`[${channel}] ${tags['display-name']}: ${message}`);
   
 });
